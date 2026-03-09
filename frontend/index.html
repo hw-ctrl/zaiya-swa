@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zaiya Test Chat</title>
+  </head>
+  <body>
+    <h1>Zaiya – Tester Portal</h1>
+
+    <div id="auth-section">
+      <h2>Sign in as tester</h2>
+      <input id="name" placeholder="Name" />
+      <input id="email" placeholder="Email" />
+      <button onclick="login()">Enter</button>
+      <p id="auth-error" style="color:red;"></p>
+    </div>
+
+    <div id="chat-section" style="display:none;">
+      <h2>Chat</h2>
+      <div id="chat-log" style="border:1px solid #ccc; padding:10px; height:200px; overflow-y:auto;"></div>
+      <input id="msg" placeholder="Type a message..." />
+      <button onclick="send()">Send</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
