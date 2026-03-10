@@ -48,7 +48,10 @@ module.exports = async function (context, req) {
     context.log("AUTH ERROR:", err);
     context.res = {
       status: 500,
-      body: { error: "Internal server error.", details: err.message }
+      body: {
+        error: "Internal server error.",
+        details: err.message
+      }
     };
   }
 };
