@@ -43,7 +43,7 @@ module.exports = async function (context, req) {
       status: 200,
       body: { token }
     };
-
+##
   } catch (err) {
     context.log("AUTH ERROR:", err);
     context.res = {
