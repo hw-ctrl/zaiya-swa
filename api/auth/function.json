@@ -6,7 +6,8 @@
       "direction": "in",
       "name": "req",
       "methods": [ "post" ],
-      "route": "auth"
+      "route": "auth",
+      "dataType": "json"
     },
     {
       "type": "http",
