@@ -2,9 +2,8 @@ const jwt = require("jsonwebtoken");
 
 // Simple allow-list for testing
 const allowedTesters = [
-  "you@example.com",
-  "tester1@zaiya.io",
-  "friend@example.com"
+  "harveywyche@gmail.com",
+  "harvey@voxettalabs.com",
 ];
 
 const JWT_SECRET = process.env.JWT_SECRET || "dev-secret-change-me";
