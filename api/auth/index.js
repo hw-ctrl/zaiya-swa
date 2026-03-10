@@ -10,6 +10,8 @@ const JWT_SECRET = process.env.JWT_SECRET || "dev-secret-change-me";
 const JWT_TTL_SECONDS = 60 * 60; // 1 hour
 
 module.exports = async function (context, req) {
+  context.log("BODY:", req.body);
+  
   const { name, email } = req.body || {};
 
   if (!email) {
